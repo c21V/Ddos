@@ -1,0 +1,13 @@
+# proxies.txt file content (for GyOu-Async-Strong.py)
+
+# بروكسي عام (IP:Port)
+203.0.113.4:8080
+
+# بروكسي مع بروتوكول محدد
+https://198.51.100.12:443
+
+# بروكسي SOCKS5
+socks5://172.16.0.1:1080
+
+# بروكسي خاص مع مصادقة (Username:Password@IP:Port)
+gyou_user:gyou_pass123@1.2.3.4:8000
