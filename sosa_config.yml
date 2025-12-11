@@ -1,0 +1,21 @@
+# sex_config.yml
+attack_settings:
+  global_concurrency: 5000
+  default_method: "POST"
+  timeout_seconds: 15
+  
+target_profiles:
+  - name: "Login_Page_Heavy"
+    url: "http://target.com/login"
+    method_override: "POST"
+    payload_data:
+      username: "{random_string_8}"
+      password: "{random_string_8}"
+  
+  - name: "Search_Endpoint_Light"
+    url: "http://target.com/search?q={random_string_6}"
+    method_override: "GET"
+
+proxy_settings:
+  proxy_file: "proxies.txt"
+  use_rotation: true
